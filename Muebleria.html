@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <header>
+            <title> Muebleria</title>           
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="estilo.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <div class="container-fluid px-4">
+                <h1 class="display-6 text-center text-uppercase montserrat-Font">
+                    <span class="titulo_principal">Tienda</span>
+                    <span class="titulo_principal1">de Muebles</span>
+                </h1>
+                <!--Barra de Navegación-->
+                <nav>
+                <ul class="nav nav-pills nav-fill gap-2 p-1 mb-2 small bg-info" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-dark); --bs-nav-pills-link-active-color: var(--bs-dark); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                    <li class="nav-item" role="barra">
+                    <button class="nav-link rounded-3 open-sans-Font" id="inicio-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Inicio</button>
+                    </li>
+                        <li class="nav-item" role="barra">
+                        <button class="nav-link active rounded-3 open-sans-Font" id="catalogo-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Catálogo</button>
+                        </li>
+                            <li class="nav-item" role="barra">
+                            <button class="nav-link rounded-3 open-sans-Font" id="ofertas-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Ofertas</button>
+                            </li>
+                                <li class="nav-item" role="barra">
+                                <button class="nav-link rounded-3 open-sans-Font" id="sucursales-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Sucursales</button>
+                                </li>
+                                    <li class="nav-item" role="barra">
+                                    <button class="nav-link rounded-3 open-sans-Font" id="contacto-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contacto</button>
+                                    </li>
+                </ul>
+                </nav>
+                <div class="d-flex flex-column justify-content-center align-items-center alert alert-warning animate__animated animate__tada fs-4 fw-bold text-danger text-center open-sans-Font" role="alert">
+                    <div class="d-flex flex-column flex-md-row">
+                    <img src="imagenes/descuentos.jpg" class="img-fluid me-2 rounded-2" alt="Descripción de la imagen">    
+                    ¡ATENCIÓN! El mejor buen fin lo encuentras aqui, con grandes descuentos de hasta el 50%.
+                    <img src="imagenes/compra.png" class="img-fluid me-2 rounded-2" alt="Descripción de la imagen">
+                    </div>
+                </div>
+                <!--Carrusel-->
+                <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"></button>
+                    </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="imagenes/categoria1.jpg" class="d-block w-100 rounded-2 border-primary m-1" alt="Cat 1">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5 class="montserrat-Font text-dark">Escritorios</h5>
+                        </div>
+                    </div>    
+                    <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenes/categoria2.jpg" class="d-block w-100 rounded-2 border-primary m-1" alt="Cat 2">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5 class="montserrat-Font text-dark">Muebles para TV</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenes/categoria3.jpg" class="d-block w-100 rounded-2 border-primary m-1" alt="Cat 3">
+                        <div class="carousel-caption d-none d-md-block">
+                    <h5 class="montserrat-Font text-dark">Comedores</h5>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previo</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                </div>
+            <!--Producto 1-->
+            <h1 class="display-6 p-1 mb-1 bg-muted text-dark text-center text-uppercase montserrat-Font">Nuestros Productos</h1>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column flex-md-row">
+                    <img src="imagenes/producto1.jpg" class="d-block img-fluid rounded-2" alt="Producto1">
+                    <div class="bg-primary rounded-2 text-center open-sans-Font text-white">
+                    <h2>Recámara</h2>
+                    <p>Recamara individual Tabata Café de 4 piezas.</p>
+                    <p>Incluye: Cabecera individual, base individual, escritorio, silla.</p>
+                    <p class="bg-danger">$15,500.00</p>
+                    <p class="bg-warning text-dark">Precio especial, valido solo hasta el 15 de Noviembre</p>
+                    <button class="btn btn-success btn-sm">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!--Producto 2,3-->
+            <div class="d-flex flex-column flex-md-row gap-1 m-1 justify-content-center align-items-center">
+                <div>
+                    <img src="imagenes/producto2.jpg" class="d-block img-fluid rounded-2" alt="Producto2">
+                    <div class="bg-primary rounded-2 text-center open-sans-Font text-white">
+                    <h2>Aparador Hiedra Blanco</h2>
+                    <p class="bg-success">Disponible Inmediato</p>
+                    <p>Incluye: Aparador.</p>
+                    <p>$4,759.00</p>
+                    <button class="btn btn-success btn-sm">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="imagenes/producto3.jpg" class="d-block img-fluid rounded-2" alt="Producto3">
+                    <div class="bg-primary rounded-2 text-center open-sans-Font text-white">
+                    <h2>Recámara Nisha Gris de 2 piezas</h2>
+                    <p>Incluye: Base Matrimonial, colchón Matrimonial Ortopedico.</p>
+                    <p class="bg-danger">$5,459.00</p>
+                    <p class="bg-warning text-dark">Precio especial, valido solo hasta el 15 de Noviembre</p>
+                    <button class="btn btn-success btn-sm">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!--Producto 4,5,6-->
+            <div class="d-flex flex-column flex-md-row gap-1 m-1 justify-content-center align-items-center">
+                <div>
+                    <img src="imagenes/producto4.jpg" class="d-block img-fluid rounded-2" alt="Producto4">
+                    <div class="bg-primary rounded-2 text-center open-sans-Font text-white">
+                    <h2>Sala Modular 3 Plazas</h2>
+                    <p>Incluye: Sala Modular, 8 Cojines Decorativos</p>
+                    <p class="bg-danger">$7,679.00</p>
+                    <p class="bg-warning text-dark">Precio especial, valido solo hasta el 15 de Noviembre</p>
+                    <button class="btn btn-success btn-sm">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="imagenes/producto5.jpg" class="d-block img-fluid rounded-2" alt="Producto5">
+                    <div class="bg-primary rounded-2 text-center open-sans-Font text-white">
+                    <h2>Sillón Torcello Beige</h2>
+                    <p>Incluye Sillón.</p>
+                    <p class="text-white bg-dark">Precio especial, valido solo hasta el 10 de Noviembre</p>
+                    <p>$3,469.00</p>
+                    <button class="btn btn-success btn-sm">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="imagenes/producto6.jpg" class="d-block img-fluid rounded-2" alt="Producto6">
+                    <div class="bg-primary rounded-2 text-center open-sans-Font text-white">
+                    <h2>Sofá de 2 Plazas Kubra Gris</h2>
+                    <p class="bg-success">Disponible Inmediato</p>
+                    <p>Incluye sofá de 2 plazas y dos cojines decorativos</p>
+                    <p>$7,459.00</p>
+                    <button class="btn btn-success btn-sm">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!--Categorias 1,2,3-->
+            <h2 class="display-6 p-1 mb-1 bg-muted text-dark text-center text-uppercase montserrat-Font">Categoria de Productos</h2>
+            <div class="d-flex flex-column flex-md-row gap-1 m-1 justify-content-center align-items-center">
+                <div>
+                    <img src="imagenes/categoria1.jpg" class="d-block img-fluid rounded-2" alt="Producto1">
+                    <h3 class="text-dark text-center text-uppercase montserrat-Font">Escritorios</h2>
+                </div>
+                <div>
+                    <img src="imagenes/categoria2.jpg" class="d-block img-fluid rounded-2" alt="Producto1">
+                    <h3 class="text-dark text-center text-uppercase montserrat-Font">Muebles para TV</h2>
+                </div>
+                <div>
+                    <img src="imagenes/categoria3.jpg" class="d-block img-fluid rounded-2" alt="Producto1">
+                    <h3 class="text-dark text-center text-uppercase montserrat-Font">Comedores</h2>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container my-5 open-sans-Font">
+                <div class="row">
+                    <div class="col-md-4">
+                    <h3>Categorias</h3>
+                    <nav>
+                        <a href="#">Salas</a>
+                        <a href="#">Escritorios</a>
+                        <a href="#">Comedores</a>
+                        <a href="#">Recamaras</a>
+                        <a href="#">Muebles para TV</a>
+                        <a href="#">Sillas</a>
+                    </nav>
+                    </div>
+                    <div class="col-md-4">
+                    <h3>Sobre Nosotros</h3>
+                    <nav>
+                        <a href="#">Nuestra Historia</a>
+                        <a href="#">Misión, Visión, Valores</a>
+                        <a href="#">Politica de Privacidad</a>
+                    </nav>
+                    </div>
+                    <div class="col-md-4">
+                    <h3>Soporte</h3>
+                    <nav>
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Ayuda en Linea</a>
+                        <a href="#">Termino de Promociones</a>
+                        <a href="#">Compra Segura</a>
+                        <a href="#">Garantia</a>
+                    </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="text-center open-sans-Font">
+            <p>&copy; 2025 Todos los derechos reservados. Tienda de Muebles.</p>
+        </footer>
+    </body>
+</html> 

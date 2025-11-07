@@ -1,0 +1,27 @@
+.open-sans-Font{
+font-family: "Open Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+font-variation-settings:"wdth" 100;
+}
+
+.montserrat-Font{
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
+}
+
+.titulo_principal{
+    color: black;
+}
+.titulo_principal1{
+    color: blue;
+}
+
+.fade-out {
+opacity: 0;
+transition: opacity 0.5s ease-out;
+    }
+
